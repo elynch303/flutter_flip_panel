@@ -198,9 +198,10 @@ class CountdownClockPage extends StatelessWidget {
       body: Container(
         child: Center(
           child: FlipClock.countdown(
-            duration: Duration(minutes: 1),
+            duration: Duration(days: 100),
             digitColor: Colors.white,
             backgroundColor: Colors.black,
+            showDays: true,
             digitSize: 48.0,
             borderRadius: const BorderRadius.all(Radius.circular(3.0)),
             onDone: () => print('ih'),

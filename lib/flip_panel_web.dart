@@ -114,6 +114,7 @@ class FlipClock extends StatelessWidget {
     @required Color digitColor,
     @required Color backgroundColor,
     @required double digitSize,
+    @required bool showDays,
     BorderRadius borderRadius = const BorderRadius.all(Radius.circular(0.0)),
     this.spacing = const EdgeInsets.symmetric(horizontal: 2.0),
     this.onDone,
@@ -124,7 +125,7 @@ class FlipClock extends StatelessWidget {
   })  : countdownMode = true,
         timeLeft = duration,
         _showHours = duration.inHours > 0,
-        _showDays = false {
+        _showDays = showDays {
     _digitBuilder = (context, digit) => Container(
           alignment: Alignment.center,
           width: width,
