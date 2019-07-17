@@ -1,12 +1,14 @@
-# Flip Panel
+# Flip Panel Web
 
-[![pub package](https://img.shields.io/pub/v/flip_panel.svg)](https://pub.dartlang.org/packages/flip_panel) [![Build Status](https://travis-ci.org/hnvn/flutter_flip_panel.svg?branch=master)](https://travis-ci.org/hnvn/flutter_flip_panel)
+[![pub package](https://img.shields.io/pub/v/flip_panel.svg)](https://pub.dartlang.org/packages/flip_panel) [![Build Status](https://travis-ci.org/elynch303/flutter_flip_panel.svg?branch=master)](https://travis-ci.org/elynch303/flutter_flip_panel)
 
 A package for flip panel with built-in animation
 
+Web Version based on [Flip Panel](https://github.com/hnvn/flutter_flip_panel)
+
 <p>
-	<img src="https://github.com/hnvn/flutter_flip_panel/blob/master/screenshots/flip_image.gif?raw=true" width="250" height="443"  />
-	<img src="https://github.com/hnvn/flutter_flip_panel/blob/master/screenshots/flip_clock.gif?raw=true" width="250" height="443" />
+	<img src="https://github.com/elynch303/flutter_flip_panel/blob/master/screenshots/flip_image.gif?raw=true" width="250" height="443"  />
+	<img src="https://github.com/elynch303/flutter_flip_panel/blob/master/screenshots/flip_clock.gif?raw=true" width="250" height="443" />
 </p>
 
 ## How to use
@@ -60,4 +62,4 @@ FlipPanel<int>.stream(
 
 ````
 
-
+<!-- NOTE: [flutter_web](https://github.com/flutter/flutter_web) packages are not published to pub.dartlang.org so the overrides are commented UNCOMMENT befor using   -->
