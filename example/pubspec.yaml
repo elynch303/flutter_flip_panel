@@ -1,39 +1,56 @@
-name: example_flip_panel
-description: A new Flutter application.
+name: my_app
 
-# The following defines the version and build number for your application.
-# A version number is three numbers separated by dots, like 1.2.43
-# followed by an optional build number separated by a +.
-# Both the version and the builder number may be overridden in flutter
-# build by specifying --build-name and --build-number, respectively.
-# Read more about versioning at semver.org.
-version: 1.0.0+1
+version: 1.0.0
 
 dependencies:
-  flutter:
-    sdk: flutter
-  flip_panel:
+  ## REPLACE
+  ## Update your dependencies to use `flutter_web`
+  #flutter:
+  #  sdk: flutter
+  flutter_web: any
+  flip_panel_web:
     path: ..
 
-  # The following adds the Cupertino Icons font to your application.
-  # Use with the CupertinoIcons class for iOS style icons.
-  cupertino_icons: ^0.1.2
-
 dev_dependencies:
-  flutter_test:
-    sdk: flutter
+  ## REPLACE
+  ## Same goes for test packages
+  #flutter_test:
+  #  sdk: flutter
+  flutter_web_test: any
 
+  ## ADD
+  ## Add these dependencies to enable the Dart web build system
+  build_runner: ^1.2.2
+  build_web_compilers: ^1.1.0
 
-# For information on the generic Dart part of this file, see the
-# following page: https://www.dartlang.org/tools/pub/pubspec
+  test: ^1.3.4
 
-# The following section is specific to Flutter.
-flutter:
+## REMOVE
+## For the preview, assets are handled differently. Remove or comment
+## out this section. See `Assets` below for more details
+# flutter:
+#   uses-material-design: true
+#   assets:
+#     - asset/
+#
+#   fonts:
+#   - family: Plaster
+#     fonts:
+#     - asset: asset/fonts/plaster/Plaster-Regular.ttf
 
-  # The following line ensures that the Material Icons font is
-  # included with your application, so that you can use the icons in
-  # the material Icons class.
-  uses-material-design: true
-
-  assets:
-    - assets/flutter_cover.png
+## ADD
+## flutter_web packages are not published to pub.dartlang.org
+## These overrides tell the package tools to get them from GitHub
+dependency_overrides:
+  flutter_web:
+    git:
+      url: https://github.com/flutter/flutter_web
+      path: packages/flutter_web
+  flutter_web_ui:
+    git:
+      url: https://github.com/flutter/flutter_web
+      path: packages/flutter_web_ui
+  flutter_web_test:
+    git:
+      url: https://github.com/flutter/flutter_web
+      path: packages/flutter_web_test

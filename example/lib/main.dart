@@ -1,5 +1,5 @@
-import 'package:flip_panel/flip_panel.dart';
-import 'package:flutter/material.dart';
+import 'package:flip_panel_web/flip_panel_web.dart';
+import 'package:flutter_web/material.dart';
 import 'dart:async';
 import 'dart:math';
 

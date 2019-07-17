@@ -1,19 +1,59 @@
-name: flip_panel
+name: flip_panel_web
 description: A package for flip panel with built-in animation
 version: 1.0.0
-author: Hung Duy Ha <hunghd.yb@gmail.com>
-homepage: https://github.com/hnvn/flutter_flip_panel
+author: Evan Lynch <e.lynch303@gmail.com>
+homepage: https://github.com/elynch303/flutter_flip_panel
 
 environment:
   sdk: '>=1.20.1 <3.0.0'
 
 dependencies:
-  flutter:
-    sdk: flutter
+  ## REPLACE
+  ## Update your dependencies to use `flutter_web`
+  #flutter:
+  #  sdk: flutter
+  flutter_web: any
 
 dev_dependencies:
-  flutter_test:
-    sdk: flutter
+  ## REPLACE
+  ## Same goes for test packages
+  #flutter_test:
+  #  sdk: flutter
+  flutter_web_test: any
 
-flutter:
+  ## ADD
+  ## Add these dependencies to enable the Dart web build system
+  build_runner: ^1.2.2
+  build_web_compilers: ^1.1.0
 
+  test: ^1.3.4
+
+## REMOVE
+## For the preview, assets are handled differently. Remove or comment
+## out this section. See `Assets` below for more details
+# flutter:
+#   uses-material-design: true
+#   assets:
+#     - asset/
+#
+#   fonts:
+#   - family: Plaster
+#     fonts:
+#     - asset: asset/fonts/plaster/Plaster-Regular.ttf
+
+## ADD
+## flutter_web packages are not published to pub.dartlang.org
+## These overrides tell the package tools to get them from GitHub
+dependency_overrides:
+  flutter_web:
+    git:
+      url: https://github.com/flutter/flutter_web
+      path: packages/flutter_web
+  flutter_web_ui:
+    git:
+      url: https://github.com/flutter/flutter_web
+      path: packages/flutter_web_ui
+  flutter_web_test:
+    git:
+      url: https://github.com/flutter/flutter_web
+      path: packages/flutter_web_test

@@ -8,9 +8,9 @@
 ///
 ///
 
-library flip_panel;
+library flip_panel_web;
 
-import 'package:flutter/material.dart';
+import 'package:flutter_web/material.dart';
 import 'dart:async';
 import 'dart:math' as math;
 

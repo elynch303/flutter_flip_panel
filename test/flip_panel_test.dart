@@ -1,6 +1,6 @@
-import 'package:flutter/material.dart';
-import 'package:flutter_test/flutter_test.dart';
-import 'package:flip_panel/flip_panel.dart';
+import 'package:flutter_web/material.dart';
+import 'package:flutter_web_test/flutter_web_test.dart';
+import 'package:flip_panel_web/flip_panel_web.dart';
 import 'dart:async';
 
 import 'package:matcher/matcher.dart';

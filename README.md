@@ -12,7 +12,7 @@ A package for flip panel with built-in animation
 ## How to use
 
 ````dart
-import 'package:flip_panel/flip_panel.dart';
+import 'package:flip_panel_web/flip_panel_web.dart';
 ````
 
 Create a flip panel from iterable source:
